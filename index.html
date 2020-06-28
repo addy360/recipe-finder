@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Apprec</title>
+	<title>RecFi | Recipe finder</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body>
+
+	<div class="container">
+		<h1>Find recipe of your favorite meal</h1>
+		<div class="flex">
+			<form class="flex">
+				<input class="search" type="text" placeholder="Enter meal , foodie keyword" />
+				<button class="submit-search">
+					<i class="fas fa-search"></i>
+				</button>
+			</form>
+			<button class="random">
+				<i class="fas fa-random"></i>
+			</button>
+			<div class="result"></div>
+			<div class="meals"></div>
+			<div class="single-meal"></div>
+		</div>
+	</div>
 	
 	<script type="text/javascript" src="./js/main.js"></script>
 </body>

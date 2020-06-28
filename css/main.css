@@ -5,3 +5,85 @@
 	margin: 0;
 	padding: 0;
 }
+
+body{
+	background: linear-gradient(45deg, #343434, #434343, #222);
+	height: 100vh;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;   
+}
+
+.container{
+	width: 800px;
+
+	text-align: center;
+	margin: auto;
+	background: rgba(0,0,0,.4);
+	border-radius:  10px;
+	max-width: 100%;
+	padding: 2rem 1rem;
+	box-shadow: 0 0 10px 1px rgba(255,255,255,.2);
+}
+
+.container h1{
+	font-size: 2rem;
+	font-weight: 300;
+	margin-bottom: 2rem;
+}
+
+.flex{
+	display: flex;
+	flex-direction: column;
+}
+
+
+form.flex{
+	flex-direction: row;
+	margin-bottom: 1rem;
+}
+
+button{
+	cursor: pointer;
+	background: #937c6d;
+	border:none;
+	outline: none;
+}
+
+form *, .random{
+	outline:none;
+	padding: .25rem 1rem;
+	font-size: 1rem;
+}
+.search{
+	flex:7;
+	border:1px solid #333;
+	border-right: none;
+	border-radius: 5px 0 0 5px;
+}
+.submit-search{
+	flex:1;
+	border-radius: 0 5px 5px 0;
+	border: none;
+	background: #333;
+	color: #fff;
+}
+
+.random{
+	color: #fff;
+	border-radius: 3px;
+	transition: all ease .3s;
+}
+
+.random:active{
+	transform: scale(.9);
+}
+
+
+
+
+
+
