@@ -8,7 +8,7 @@
 
 body{
 	background: linear-gradient(45deg, #343434, #434343, #222);
-	height: 100vh;
+	min-height: 100vh;
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	display: flex;
@@ -21,7 +21,7 @@ body{
 	width: 800px;
 
 	text-align: center;
-	margin: auto;
+	margin: 2rem auto;
 	background: rgba(0,0,0,.4);
 	border-radius:  10px;
 	max-width: 100%;
@@ -82,8 +82,113 @@ form *, .random{
 	transform: scale(.9);
 }
 
+#alert{
+	padding:1rem;
+	background: rgba(255,255,255,.5);
+	border-radius: 5px;
+	color: #313131;
+	transition: all ease .3s;
+	position: fixed;
+	top: 1rem;
+	transform: translateY(-200px);
+	box-shadow: 0 0 20px rgba(0,0,0,.5)
+}
 
+.show{
+	transform: translateY(0) !important;
+}
 
+.result{
+	margin-top: 1rem;
+}
 
+.result h2{
+	font-weight: 300;
+	margin-bottom: 2rem;
+}
 
+.meals{
+	margin-top: 1rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: .5rem;
+}
+
+.meal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: rgba(255,255,255,.1);
+	border-radius: 5px;
+	position: relative;
+}
+
+.meal img{
+	width: 100%;
+	box-shadow: 0 0 10px 2px rgba(0,0,0,.8);
+	border-radius: 4px;
+}
+
+.meal .meal-info{
+	cursor: pointer;
+	font-weight: 200;
+	font-size: 1rem;
+	position: absolute;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	opacity: 0;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	transition: all ease .3s;
+
+}
+
+.meal-info h3{
+	font-weight: inherit;line-height: 1.7;
+	font-size: inherit;
+}
+
+.meal:hover .meal-info{
+	opacity: 1;
+}
+
+.meal-container{
+	position: relative;
+	padding: 2rem;
+	border-radius: 7px;
+	overflow: auto;
+	box-shadow: 0 0 20px rgba(0,0,0,.7);
+	background-attachment: fixed;
+	max-height: 500px;
+}
+
+.overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,.5);
+	pointer-events: none;
+}
+
+.meal-content{
+	z-index: 2;
+	position: relative;
+	line-height: 1.7;
+}
+
+.meal-content ol {
+	text-align: left;
+	margin-left: 2rem;
+	margin-bottom: 3rem;
+}
+.meal-content li{
+	border-bottom: 1px solid #777;
+}
 
